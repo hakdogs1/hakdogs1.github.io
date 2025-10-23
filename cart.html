@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart - Wilson T-shirt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+      /* Navbar Hover Effects */
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .dropdown-item:hover {
+        color: #ffc107 !important; /* Bootstrap warning color */
+        transition: color 0.3s ease;
+      }
+
+      /* Dropdown hover effect */
+      .dropdown-menu .dropdown-item:hover {
+        background-color: #ffc107 !important;
+        color: #000 !important;
+      }
+      /* Button Hover */
+      .btn-warning:hover {
+        background-color: #e0a800;
+        color: #fff;
+        transition: all 0.3s ease;
+      }
+
+      /* Danger Button Hover */
+      .btn-danger:hover {
+        background-color: #dc3545cc;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+      }
+
+      /* Footer Links Hover */
+      footer a:hover {
+        color: #ffc107 !important;
+        transition: color 0.3s ease;
+      }
+
+      /* Table Row Hover */
+      tbody tr:hover {
+        background-color: rgba(255, 193, 7, 0.1);
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+
+  <body class="bg-dark text-light">
+
+    <!-- NAVBAR -->
+    <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-warning" href="index.html">
+        <img src="images/Logo.png" width="50" height="50" class="rounded-circle me-2" alt="Wilson T-shirt Logo">
+        Wilson Stride
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html"><i class="bi bi-house"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="about.html"><i class="bi bi-people-fill"></i> About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-bag"></i> Products</a>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item text-warning" href="category1.html">Athletic Shoes</a></li>
+              <li><a class="dropdown-item text-light" href="category2.html">Boots</a></li>
+              <li><a class="dropdown-item text-light" href="category3.html">Casual Shoes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-light" href="cart.html"><i class="bi bi-cart"></i> Cart</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="contact.html"><i class="bi bi-telephone"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 bg-light text-light border-0" type="search" placeholder="Search products...">
+        <button class="btn btn-warning text-dark fw-bold" type="submit">Search</button>
+      </form>
+
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-light" href="login.html"><i class="bi bi-box-arrow-in-right"></i> Log-in</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="register.html"><i class="bi bi-person-plus"></i> Register</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+    <!-- CART CONTENT -->
+    <main class="container py-5">
+      <h1 class="text-center text-warning fw-bold mb-4">Your Shopping Cart</h1>
+
+      <div class="table-responsive">
+        <table class="table table-dark table-striped align-middle text-center shadow">
+          <thead class="table-warning text-dark">
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Total</th>
+              <th scope="col">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="images/cs2.jpg" width="70" class="rounded" alt=""></td>
+              <td>Leather Loafers</td>
+              <td>₱2,099</td>
+              <td><input type="number" class="form-control bg-secondary text-light border-2 mx-auto" style="width:80px" value="1"></td>
+              <td>₱2,099</td>
+              <td><button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button></td>
+            </tr>
+            <tr>
+              <td><img src="images/B2.jpg" width="70" class="rounded" alt=""></td>
+              <td>Classic Leather Boots</td>
+              <td>₱3,299</td>
+              <td><input type="number" class="form-control bg-secondary text-light border-2 mx-auto" style="width:80px" value="2"></td>
+              <td>₱6,598</td>
+              <td><button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Total -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+          <div class="card bg-secondary border-0 text-light shadow">
+            <div class="card-body">
+              <h5 class="fw-bold text-warning">Order Summary</h5>
+              <p class="d-flex justify-content-between"><span>Subtotal:</span> <span>₱8,697</span></p>
+              <p class="d-flex justify-content-between"><span>Shipping:</span> <span>₱70</span></p>
+              <hr>
+              <h5 class="d-flex justify-content-between text-warning"><span>Total:</span> <span>₱8,767</span></h5>
+              <button class="btn btn-warning text-dark fw-bold w-100 mt-3"><i class="bi bi-bag-check"></i> Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center text-lg-start">
+      <section class="p-4 bg-secondary text-white">
+        <span>Connect with us:</span>
+        <a href="#" class="text-warning ms-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-warning ms-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-warning ms-3"><i class="fab fa-instagram"></i></a>
+      </section>
+
+      <section class="container text-center text-md-start py-4">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold text-warning">Wilson Stride</h6>
+            <p>High-quality footwear for every style — athletic, boots, and casual. Crafted for comfort and durability.</p>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold text-warning">Products</h6>
+            <p><a href="category1.html" class="text-light text-decoration-none">Athletic Shoes</a></p>
+            <p><a href="category2.html" class="text-light text-decoration-none">Boots</a></p>
+            <p><a href="category3.html" class="text-light text-decoration-none">Casual Shoes</a></p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold text-warning">Useful Links</h6>
+            <p><a href="cart.html" class="text-light text-decoration-none">Your Cart</a></p>
+            <p><a href="login.html" class="text-light text-decoration-none">Login</a></p>
+            <p><a href="register.html" class="text-light text-decoration-none">Register</a></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center p-3 bg-secondary text-light">
+        © 2025 Wilson Stride. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

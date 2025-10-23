@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Wilson Stride</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+      /* Dropdown hover effect */
+      .dropdown-menu .dropdown-item:hover {
+        background-color: #ffc107 !important;
+        color: #000 !important;
+      }
+
+      /* Navbar link hover effect */
+      .navbar .nav-link:hover {
+        color: #ffc107 !important;
+      }
+
+      /* Active link highlight (current page stays warning color) */
+      .navbar .nav-link.active {
+        color: #ffc107 !important;
+        font-weight: 600;
+      }
+
+      /* Footer link hover */
+      footer a:hover {
+        color: #ffc107 !important;
+      }
+    </style>
+  </head>
+
+  <body class="bg-dark text-light">
+
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-warning" href="index.html">
+            <img src="images/Logo.png" width="50" height="50" class="rounded-circle me-2" alt="Wilson Stride Logo">
+            Wilson Stride
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html"><i class="bi bi-house"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-warning" href="about.html"><i class="bi bi-people-fill"></i> About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown">
+                  <i class="bi bi-bag"></i> Products
+                </a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li><a class="dropdown-item text-light" href="category1.html">Athletic Shoes</a></li>
+                  <li><a class="dropdown-item text-light" href="category2.html">Boots</a></li>
+                  <li><a class="dropdown-item text-light" href="category3.html">Casual Shoes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="cart.html"><i class="bi bi-cart"></i> Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="contact.html"><i class="bi bi-telephone"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 bg-light text-dark border-0" type="search" placeholder="Search products...">
+            <button class="btn btn-warning text-dark fw-bold" type="submit">Search</button>
+          </form>
+
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-light" href="login.html"><i class="bi bi-box-arrow-in-right"></i> Log-in</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="register.html"><i class="bi bi-person-plus"></i> Register</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <main class="container py-5">
+      <div class="text-center mb-5">
+        <h1 class="fw-bold text-warning">About Wilson Stride</h1>
+        <p class="text-secondary">Where quality meets comfort — since 2020</p>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="images/1760568240979.jpg" alt="About Wilson Stride" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="fw-bold text-warning mb-3">Our Story</h3>
+          <p>
+            Founded in 2020, <strong>Wilson Stride</strong> began as a small local business with one big goal — 
+            to create shoes that blend premium quality, comfort, and timeless design.
+            We started with just a few styles, but our passion for creativity and customer satisfaction helped us grow into a trusted footwear brand.
+          </p>
+          <p>
+            Each pair we make goes through a careful selection of materials, crafting, and quality checks
+            to ensure that every shoe you wear feels as great as it looks.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h3 class="fw-bold text-warning mb-3">Our Mission</h3>
+          <p>
+            To provide high-quality, stylish, and comfortable shoes that bring confidence to every individual.
+            We aim to make footwear simple yet impactful for everyone.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="fw-bold text-warning mb-3">Our Vision</h3>
+          <p>
+            To become a leading footwear brand known for durability, affordability, and authenticity,
+            inspiring people through what they wear.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="category1.html" class="btn btn-warning fw-bold text-dark px-4 py-2">Shop Now</a>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center text-lg-start">
+      <section class="p-4 bg-secondary text-white">
+        <span>Connect with us:</span>
+        <a href="#" class="text-warning ms-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-warning ms-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-warning ms-3"><i class="fab fa-instagram"></i></a>
+      </section>
+
+      <section class="container text-center text-md-start py-4">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold text-warning">Wilson Stride</h6>
+            <p>High-quality footwear for every style — athletic, boots, and casual. Crafted for comfort and durability.</p>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold text-warning">Products</h6>
+            <p><a href="category1.html" class="text-light text-decoration-none">Athletic Shoes</a></p>
+            <p><a href="category2.html" class="text-light text-decoration-none">Boots</a></p>
+            <p><a href="category3.html" class="text-light text-decoration-none">Casual Shoes</a></p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold text-warning">Useful Links</h6>
+            <p><a href="cart.html" class="text-light text-decoration-none">Your Cart</a></p>
+            <p><a href="login.html" class="text-light text-decoration-none">Login</a></p>
+            <p><a href="register.html" class="text-light text-decoration-none">Register</a></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center p-3 bg-secondary text-light">
+        © 2025 Wilson Stride. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
